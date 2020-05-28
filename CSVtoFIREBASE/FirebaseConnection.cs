@@ -10,9 +10,9 @@ namespace CSVtoFIREBASE
         FirestoreDb db;
 
         public FirebaseConnection(){
-            string path = AppDomain.CurrentDomain.BaseDirectory + @"smart-financial-c2d8b-firebase-adminsdk-dcn7a-2c49d1f2ef.json";
+            string path = AppDomain.CurrentDomain.BaseDirectory + @"yourCredentialPath.json";
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
-            db = FirestoreDb.Create("smart-financial-c2d8b");
+            db = FirestoreDb.Create("yourDataBaseId");
         }
 
         void AddRandomIdDocument()
