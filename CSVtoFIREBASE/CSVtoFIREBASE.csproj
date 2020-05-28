@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="smart-financial-c2d8b-firebase-adminsdk-dcn7a-2c49d1f2ef.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="smart-financial-c2d8b-firebase-adminsdk-dcn7a-2c49d1f2ef.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Cloud.Firestore" Version="2.0.0" />
+    <PackageReference Include="Google.Cloud.Firestore.V1" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>
